@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="style.css">
+    <link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hanunoo&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Pendaftaran Peminatan</h1>
+        </div>
+        <form action="">
+            <label for="nama">Nama</label>
+            <input type="text" placeholder="Nama anda" id="nama">
+            <label for="nim">NIM</label>
+            <input type="text" placeholder="NIM anda" id="nim">
+            <p>Peminatan pada bidang:</p>
+
+            <div class="radio-group">
+                <input type="radio" name="peminatan" id="programing" value="programing">
+                <label for="programing">Programing</label>
+                <input type="radio" name="peminatan" id="desain" value="desain">
+                <label for="desain">Desain</label>
+                <input type="radio" name="peminatan" id="jaringan" value="jaringan">
+                <label for="jaringan">Jaringan</label>
+                <input type="radio" name="peminatan" id="data" value="data">
+                <label for="data">Data</label>
+            </div>
+
+            <label for="angkatan">Angkatan</label><br>
+            <select name="angkatan" id="angkatan" style="height: 50px">
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+            </select><br><br>
+            
+            <label for="tanggal">Tanggal Lahir</label><br>
+            <input type="text" id="tanggal" readonly><br><br>
+
+            <label for="alamat">Alamat</label><br>
+            <textarea placeholder="Tulis alamat mu disini" name="alamat" id="alamat" cols="30" rows="5"></textarea>
+            <button type="button" onclick="kirimdata()">Kirim</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+</body>
+</html>
